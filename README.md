@@ -14,13 +14,13 @@ Este repositório não é apenas um arquivo de códigos, mas um registro do meu 
 
 ## 🗂️ Organização
 
-Os arquivos estão nomeados com o número do problema para facilitar a busca (ex: `1001.java`) e organizados em pastas conforme as categorias do site.
-
+Os arquivos estão nomeados com o mesmo nome do problema para facilitar a busca (ex: `Bee1001.java`) e organizados em pastas conforme as categorias do site.
+Java não aceita classes que iniciam com número, portanto o nome dos exercícios será sempre "Bee" seguido no número da questão.
 ```text
 /
 ├── Iniciante/
-│   ├── 1001.java
-│   └── 1002.java
+│   ├── Bee1001.java
+│   └── Bee1002.java
 ├── Strings/
 ├── Estruturas de Dados/
 └── Grafos/
