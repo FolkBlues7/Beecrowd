@@ -1,0 +1,61 @@
+# --- Binários e Class Files (Essencial para Java) ---
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+
+# --- Ficheiros de Teste Local (Específico para Beecrowd) ---
+# Ignora ficheiros de entrada/saída usados para testar os exercícios
+input.txt
+output.txt
+*.in
+*.out
+
+# --- IDE: IntelliJ IDEA ---
+.idea/
+*.iml
+out/
+
+# --- IDE: Eclipse ---
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+
+# --- IDE: VS Code ---
+.vscode/
+*.code-workspace
+
+# --- IDE: NetBeans ---
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# --- Sistemas Operativos ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Ferramentas de Build (Maven/Gradle) ---
+target/
+build/
+.gradle/
