@@ -11,17 +11,17 @@ public class Bee1019 {
 
 		int time[] = { 3600, 60, 1 }; // hour, minute and second
 
-		int minutes = scanner.nextInt();
+		int seconds = scanner.nextInt();
 
 		scanner.close();
 
 		String result = "";
 
 		for (int i = 0; i < time.length; i++) {
-			result += minutes / time[i];
+			result += seconds / time[i];
 			result += i == 2 ? "" : ":";
 
-			minutes %= time[i];
+			seconds %= time[i];
 		}
 
 		System.out.println(result);
