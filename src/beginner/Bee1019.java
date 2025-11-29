@@ -18,8 +18,8 @@ public class Bee1019 {
 		String result = "";
 
 		for (int i = 0; i < time.length; i++) {
-			result += seconds / time[i];
-			result += i == 2 ? "" : ":";
+			result += seconds / time[i]; // for more sophisticated implementations use String Builder
+			result += i == time.length - 1 ? "" : ":";
 
 			seconds %= time[i];
 		}
