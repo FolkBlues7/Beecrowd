@@ -8,27 +8,29 @@ public class Bee1049 {
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 
-		StringBuilder nome = new StringBuilder();
-		nome.append(scanner.next());
-		nome.append(scanner.next());
-		nome.append(scanner.next());
+		StringBuilder chave = new StringBuilder();
+		chave.append(scanner.next());
+		chave.append(scanner.next());
+		chave.append(scanner.next());
+
+		String nome = chave.toString();
 
 		if (nome.toString().equals("vertebradoaveonivoro")) {
 			System.out.println("pomba");
-		} else if (nome.toString().equals("vertebradoavecarnivoro")) {
+		} else if (nome.equals("vertebradoavecarnivoro")) {
 			System.out.println("aguia");
-		} else if (nome.toString().equals("vertebradomamiferoonivoro")) {
+		} else if (nome.equals("vertebradomamiferoonivoro")) {
 			System.out.println("homem");
-		} else if (nome.toString().equals("vertebradomamiferoherbivoro")) {
+		} else if (nome.equals("vertebradomamiferoherbivoro")) {
 			System.out.println("vaca");
-		} else if (nome.toString().equals("invertebradoinsetohematofago")) {
+		} else if (nome.equals("invertebradoinsetohematofago")) {
 			System.out.println("pulga");
-		} else if (nome.toString().equals("invertebradoinsetoherbivoro")) {
-			System.out.println("herbivoro");
-		} else if (nome.toString().equals("invertebradoanelideohematofago")) {
-			System.out.println("hematofago");
-		} else if (nome.toString().equals("invertebradoanelideoonivoro")) {
-			System.out.println("onivoro");
+		} else if (nome.equals("invertebradoinsetoherbivoro")) {
+			System.out.println("lagarta");
+		} else if (nome.equals("invertebradoanelideohematofago")) {
+			System.out.println("sanguessuga");
+		} else if (nome.equals("invertebradoanelideoonivoro")) {
+			System.out.println("minhoca");
 		}
 
 		scanner.close();
