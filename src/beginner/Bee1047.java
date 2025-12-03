@@ -4,43 +4,28 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Bee1047 {
-
+//The trick here is to use minutes instead of hours and minutes
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 
-		int startHour = scanner.nextInt();
+		int startHour = scanner.nextInt(); // * 60 in order to transform hours into minute
 		int startMinute = scanner.nextInt();
 		int endHour = scanner.nextInt();
 		int endMinute = scanner.nextInt();
 
-		int durationHour = 0;
-		int durationMinute = 0;
+		int totalStart = startHour * 60 + startMinute;
+		int totalEnd = endHour * 60 + endMinute;
 
-		if (startHour == endHour) {
-			durationHour = 24;
-		} else {
+		int durationInMinutes = totalEnd - totalStart;
 
-			if (startHour > endHour) {
-				durationHour = Math.abs(startHour - 24) + endHour;
-			} else {
-				durationHour = Math.abs(startHour - endHour);
-			}
+		if (durationInMinutes <= 0) {
+			durationInMinutes += 24 * 60;
 		}
 
-		if (startMinute == endMinute) {
-			durationHour = durationHour == 1 ? durationHour - 1 : durationHour;
-			durationMinute = (durationHour == 24) ? 0 : 60;
-		} else {
-			if (startMinute > endMinute) {
-				durationMinute = Math.abs(startMinute - 60) + endMinute;
-				durationHour -= 1;
-			} else {
-				durationMinute = Math.abs(startMinute - endMinute);
-				durationHour = durationHour == 24 ? 0 : durationHour;
-			}
-		}
+		int finalHours = durationInMinutes / 60;
+		int finalMinutes = durationInMinutes % 60;
 
-		System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)%n", durationHour, durationMinute);
+		System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)%n", finalHours, finalMinutes);
 		scanner.close();
 	}
 }
