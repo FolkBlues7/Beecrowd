@@ -8,7 +8,7 @@ public class Bee1047 {
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
 
-		int startHour = scanner.nextInt(); // * 60 in order to transform hours into minute
+		int startHour = scanner.nextInt();
 		int startMinute = scanner.nextInt();
 		int endHour = scanner.nextInt();
 		int endMinute = scanner.nextInt();
