@@ -8,7 +8,7 @@ Bem-vindo(a)! Este repositório contém minhas resoluções para exercícios da 
 
 ## 🎯 Meta do Desafio
 
-> **"Adicionar 5 ou mais questões todos os dias até zerar o banco de dados do Beecrowd."**
+> **"Adicionar 3 ou mais questões todos os dias até zerar o banco de dados do Beecrowd."**
 
 Este repositório não é apenas um arquivo de códigos, mas um registro do meu compromisso diário com a evolução em lógica de programação e algoritmos.
 
