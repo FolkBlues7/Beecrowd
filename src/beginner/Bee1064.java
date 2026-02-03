@@ -11,12 +11,15 @@ public class Bee1064 {
 		float total = 0;
 		float average = 0;
 
-		float[] numbers = new float[6];
+		float numbers = 0;
 
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = scanner.nextFloat();
-			cont += (numbers[i] > 0) ? 1 : 0; // only the positives
-			total += (numbers[i] > 0) ? numbers[i] : 0; // only the positives
+		for (int i = 0; i < 6; i++) {
+			numbers = scanner.nextFloat();
+
+			if (numbers > 0) {
+				cont += 1;
+				total += numbers;
+			}
 
 		}
 
