@@ -23,7 +23,7 @@ public class Bee1064 {
 		average = total / cont;
 
 		System.out.printf("%d valores positivos%n", cont);
-		System.out.printf("%.1f", average);
+		System.out.printf("%.1f%n", average);
 		scanner.close();
 
 	}
