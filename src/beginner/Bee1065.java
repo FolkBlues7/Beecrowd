@@ -2,6 +2,7 @@ package beginner;
 
 import java.util.Scanner;
 
+//Since we don't need to store the input's value, a array was't used.
 public class Bee1065 {
 
 	public static void main(String[] args) {
