@@ -26,10 +26,7 @@ public class Bee1061 {
 		int totalDuration = 0; // will storage the duration in seconds
 		int dayDuration = 0;
 		int hourDuration = 0;
-		int secondDuration = 0;
-
-		// will help us to transform it back to hours and minutes
-		int aux = 0;
+		int minuteDuration = 0;
 
 		String input = "";
 
@@ -85,10 +82,10 @@ public class Bee1061 {
 		System.out.printf("%d hora(s)%n", hourDuration);
 
 		totalDuration -= hourDuration * 3600; // remove the hours
-		secondDuration = totalDuration / 60;
-		System.out.printf("%d minuto(s)%n", secondDuration);
+		minuteDuration = totalDuration / 60;
+		System.out.printf("%d minuto(s)%n", minuteDuration);
 
-		totalDuration -= secondDuration * 60;
+		totalDuration -= minuteDuration * 60;
 		System.out.printf("%d segundo(s)%n", totalDuration);
 
 		scanner.close();
