@@ -11,20 +11,18 @@ public class Bee1079 {
 		final short WEIGHT2 = 3;
 		final short WEIGHT3 = 5;
 
-		final int set = scanner.nextInt();
+		final int TOTAL_WEIGHT = WEIGHT1 + WEIGHT2 + WEIGHT3;
 
-		double value1 = 0;
-		double value2 = 0;
-		double value3 = 0;
+		final int set = scanner.nextInt();
 
 		double weightedAverage = 0;
 
 		for (int i = 0; i < set; i++) {
-			value1 = scanner.nextDouble();
-			value2 = scanner.nextDouble();
-			value3 = scanner.nextDouble();
+			double value1 = scanner.nextDouble();
+			double value2 = scanner.nextDouble();
+			double value3 = scanner.nextDouble();
 
-			weightedAverage = (value1 * WEIGHT1 + value2 * WEIGHT2 + value3 * WEIGHT3) / (WEIGHT1 + WEIGHT2 + WEIGHT3);
+			weightedAverage = (value1 * WEIGHT1 + value2 * WEIGHT2 + value3 * WEIGHT3) / TOTAL_WEIGHT;
 
 			System.out.printf("%.1f%n", weightedAverage);
 		}
