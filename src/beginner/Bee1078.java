@@ -15,6 +15,8 @@ public class Bee1078 {
 		}
 		System.out.print(result);
 
+		scanner.close();
+
 	}
 
 }
