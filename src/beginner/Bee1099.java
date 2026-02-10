@@ -14,14 +14,18 @@ public class Bee1099 {
 			int b = scanner.nextInt();
 
 			int max = Math.max(a, b);
-			int min = Math.min(a, b);
+			int min = Math.min(a, b) + 1;
 
 			int sum = 0;
 
-			for (int j = min + 1; j < max; j++) {
-				if (j % 2 != 0) {
-					sum += j;
-				}
+			if (min % 2 == 0) {
+				min++;
+			}
+
+			for (int j = min; j < max; j += 2) {
+
+				sum += j;
+
 			}
 
 			System.out.printf("%d%n", sum);
