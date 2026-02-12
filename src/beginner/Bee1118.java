@@ -5,22 +5,18 @@ import java.util.Scanner;
 public class Bee1118 {
 
 	public static double valid(Scanner scanner) {
-
-		boolean status = false;
 		double number = 0;
 
-		while (status == false) {
+		while (true) {
 
 			number = scanner.nextDouble();
 
 			if (number >= 0.0 && number <= 10.0) {
-				status = true;
-			} else {
-				System.out.println("nota invalida");
+				return number;
 			}
+			System.out.println("nota invalida");
 
 		}
-		return number;
 
 	}
 
