@@ -10,8 +10,11 @@ public class Bee1144 {
 		int n = scanner.nextInt();
 
 		for (int i = 1; i <= n; i++) {
-			System.out.printf("%d %d %d%n", i, i * i, i * i * i);
-			System.out.printf("%d %d %d%n", i, i * i + 1, i * i * i + 1);
+
+			int quadrado = i * i;
+			int cubo = i * i * i;
+			System.out.printf("%d %d %d%n", i, quadrado, cubo);
+			System.out.printf("%d %d %d%n", i, quadrado + 1, cubo + 1);
 		}
 
 		scanner.close();
